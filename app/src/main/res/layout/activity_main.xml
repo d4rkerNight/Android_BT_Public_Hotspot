@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:background="#8919ff">
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:id="@+id/emailText"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="135dp"
+    android:hint="@string/email_text"
+    android:minWidth="220dp"
+    android:gravity="center_horizontal"/>
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:ems="10"
+    android:id="@+id/passwdText"
+    android:layout_below="@+id/emailText"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="87dp"
+    android:hint="@string/passwd_text"
+    android:minWidth="220dp"
+    android:gravity="center_horizontal"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/btn_signin"
+    android:id="@+id/btn_signin"
+    android:layout_below="@+id/passwdText"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="49dp"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ssidText"
+    android:textStyle="bold"
+    android:singleLine="true"
+    android:gravity="center_horizontal"
+    android:textSize="20sp"
+    android:layout_below="@+id/textView"
+    android:layout_alignLeft="@+id/emailText"
+    android:layout_alignStart="@+id/emailText"
+    android:layout_alignRight="@+id/emailText"
+    android:layout_alignEnd="@+id/emailText"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/connSsid"
+    android:id="@+id/textView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:textSize="13sp"
+    android:gravity="center_horizontal"/>
+
+</RelativeLayout>
+
